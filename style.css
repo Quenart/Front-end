@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 50px;
+    background-color: black;
+}
+
+#menu{
+    padding: 15px;
+    display: inline;
+    float: left;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    position: relative;
+}
+
+ul,ul li{
+    display: block;
+    list-style: none;
+    overflow: hidden;
+}
+ul li{
+    float: left;
+    margin-right: 10px;
+}
+#login-icon{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+.logo{
+    float: left
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+/* RODO  dziala tylko zmien (display zeby bylo aktywen)*/
+
+#rodo{
+    position: static;
+    bottom: 0px;
+    padding: 30px;
+    height: auto;
+    background-color: #242020;
+    position: fixed;
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: large;
+    z-index: 1;
+    display: none;
+  }
+  
+.buttonrodo{
+    background-color: black;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10%;
+  }
+  
+.buttonrodo:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.3s;
+  }
+  
+  /* END RODO */
