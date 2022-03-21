@@ -10,27 +10,53 @@
     <link rel="Shortcut icon" href="logo.png"/>
     <script src="script.js"></script> 
     <title>Serwis ogłoszeniowy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="logo" src="logo.png" alt="logo">
-            <div id="menu"><ul> 
-                <li><a class="przyciski" href="Strona główna">Strona główna</a></li>
+        <img class="logo-header" src="https://placehold.co/150x40" alt="logo">
+        <div id="search-header">
+            <input type="search" name="search" id="search-form" placeholder="Powiedz co chcesz znaleść" reqxuired="">
+            <button type="submit" value="Znajdź" id="searchsubmit" class="submit">
+            <span class="screen-reader-text">Szukaj</span></button>
+        </div>     
+        <div id="menu"><ul> 
                 <li><a class="przyciski" href="">O firmie</a></li>
-                <li><a class="przyciski" href="#">Kontakt</a></li>
-                <li><a class="przyciski" href="">O mnie</a></li>
-            </ul> </div>
-            <div id="login-icon">
-                
-            </div>
+                <li><a class="przyciski" href="#">Konto</a></li>
+                <li><a class="przyciski" href="">Dodaj ogłoszenie</a></li></ul>
+        </div>
     </header>
+        <nav class="top-nav">
+            <div style="border-left:1px solid black; height: 20px; width: 1px"></div>
+        </nav>
     <div id="rodo" onload="showrodo();">
         <p>Ta strona używa cookie i innych technologii. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z aktualnymi ustawieniami przeglądarki. Możesz je zmienić w dowolnym momencie <a href="https://wezwijfachowca.pl/wp-content/uploads/2019/11/rodo-urban-1.pdf">Szczegółowa polityka - RODO</a></a></p>
-        <br>
         <input tpye="button" class="buttonrodo" onclick="closerodo()" value="Rozumiem">
-      </div>  
-    <br>
-    <footer></footer>
+      </div>
+      <nav class="bottom-nav">
+        <img class="logo-bottom-nav" src="https://placehold.co/150x40" alt="logo">
+        <p class="text-bottom-nav">OLX.pl to darmowe ogłoszenia lokalne w kategoriach: Moda, Zwierzęta, Dla Dzieci, Sport i Hobby, Muzyka i Edukacja.
+           Szybko znajdziesz tu ciekawe ogłoszenia i łatwo skontaktujesz się z ogłoszeniodawcą. '
+           Na OLX.pl czeka na Ciebie praca biurowa, mieszkania, pokoje, samochody. 
+           Jeśli chcesz coś sprzedać - w prosty sposób dodasz bezpłatne ogłoszenia. Chcesz coś kupić - tutaj znajdziesz ciekawe okazje,
+           taniej niż w sklepie. Sprzedawaj po sąsiedzku na OLX.pl</p>
+
+      </nav>
+    <footer>
+       <ul class="buttons-footer"> 
+            <li><a class="przyciski" href="Strona główna">Strona główna</a></li>
+            <li><a class="przyciski" href="">O firmie</a></li>
+            <li><a class="przyciski" href="#">Kontakt</a></li>
+            <li><a class="przyciski" href="">O mnie</a></li>
+            <li><a class="przyciski" href="">O mnie</a></li>
+            <li><a class="przyciski" href="">O mnie</a></li>
+            <li><a class="przyciski" href="">O mnie</a></li>
+            <li><a class="przyciski" href="">O mnie</a></li>
+            <li><a class="przyciski" href="">O mnie</a></li>
+        </ul> 
+    </footer> 
 </body>
 </html>
 

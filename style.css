@@ -2,49 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: nunito,Helvetica,Arial,sans-serif;
 }
+
 header{
-    height: 50px;
-    background-color: black;
+    height: 70px;
+    background-color: #162447;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 160px;   
+    align-items: center;
 }
 
-#menu{
-    padding: 15px;
-    display: inline;
-    float: left;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    position: relative;
+.top-nav{
+    height: 152px;
+    width: 100%;
+    background-color: #BAE8E8;
 }
 
-ul,ul li{
-    display: block;
-    list-style: none;
-    overflow: hidden;
-}
-ul li{
-    float: left;
-    margin-right: 10px;
-}
-#login-icon{
-    width: 50px;
-    height: 50px;
-    float: right;
-}
-.logo{
-    float: left
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-a:hover{
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
+.bottom-nav{
+    height: 455px;
+    width: 100%;
+    background-color: #E33E5A;
 }
 
+footer{
+    height: 114px;
+    background-color: #1F4068;
+}
 /* RODO  dziala tylko zmien (display zeby bylo aktywen)*/
 
 #rodo{
@@ -77,3 +63,115 @@ a:hover{
   }
   
   /* END RODO */
+
+  /* Header */
+
+  #menu{
+    padding: 15px 15px 0 15px;
+    display: inline;
+    float: right;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    white-space: nowrap;      
+    }
+
+    ul,ul li{
+        display: block;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    ul li{
+        float: left;
+        margin-right: 10px;
+    }
+
+    .logo-header{
+        margin: 5px;
+        float: left
+    }
+    
+    #login-icon{
+        width: 50px;
+        height: 50px;
+        float: right;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+    }
+
+    /* Search */
+
+    #search-header{
+        margin:  0 0 0 23%;
+        padding: 5px;
+        display: inline;
+        float: left;
+        height: 50px;
+        width: 35%; 
+    }
+
+    #search-form {
+        margin: 1px;   
+        background: #ffffff;
+        border: none;
+        border-radius: 3px;
+        padding: 0 10px 0 10px;
+        width: 250px;
+        height: 34px;
+        font-family: nunito,Helvetica,Arial,sans-serif;
+        font-weight: 800;
+        outline: none;
+        color: #000000;
+        transition: width 1.5s;
+        letter-spacing: .2px;
+        }
+
+    #searchsubmit{
+        padding: 15px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: 0 0;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        transition: .1s ease-in-out;
+    }
+
+  /* END Header */
+
+  /* Bottom nav */
+
+  .logo-bottom-nav{
+    padding: 60px 0 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-bottom-nav{
+    padding: 80px 0 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  /* Footer */
+
+.buttons-footer{
+    padding: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+  /* END Footer */
