@@ -11,23 +11,29 @@ header{
     background-color: #162447;
     width: 100%;
     display: inline-block;
-    padding: 10px 160px;   
+    padding: 10px 8%;   
     align-items: center;
-}
+}   
 
 .top-nav{
-    height: 152px;
+    height: 60px;
     width: 100%;
     background-color: #BAE8E8;
+    position: relative;
+    bottom: 4px;
 }
 
 .bottom-nav{
+    position: relative;
+    bottom: 4px;
     height: 455px;
     width: 100%;
     background-color: #E33E5A;
 }
 
 footer{
+    position: relative;
+    bottom: 4px;
     height: 114px;
     background-color: #1F4068;
 }
@@ -67,7 +73,8 @@ footer{
   /* Header */
 
   #menu{
-    padding: 15px 15px 0 15px;
+    padding: 15px 0  0 0;
+    width: 22%;
     display: inline;
     float: right;
     color: white;
@@ -85,19 +92,19 @@ footer{
     ul li{
         float: left;
         margin-right: 10px;
+        width: auto;
     }
+
 
     .logo-header{
         margin: 5px;
-        float: left
+        float: left;
+        height: 77px;
+        width: 108px;
+        position: relative;
+        bottom: 10px;
     }
-    
-    #login-icon{
-        width: 50px;
-        height: 50px;
-        float: right;
-    }
-    
+
     a{
         color: white;
         text-decoration: none;
@@ -108,15 +115,88 @@ footer{
         text-decoration: none;
     }
 
+    .bottom-ad{
+        padding: 7px 22px;
+        background: #fff;
+        color: #002f34;
+        float: right;
+        font-size: 8px;
+        position: relative;
+        top: -21.5px;
+    }
+
     /* Search */
 
     #search-header{
-        margin:  0 0 0 23%;
+        margin:  0 0 0 0%;
+        padding: 5px;
+        display: inline;
+        float: left;
+        height: 50px;
+        width: auto; 
+        display: flex;        
+        position: absolute;
+        left: 37%;
+    }
+
+    #search-form {
+        margin: 1px;   
+        background: #ffffff;
+        border: none;
+        border-radius: 3px;
+        padding: 0 10px 0 10px;
+        width: 250px;
+        height: 34px;
+        font-family: nunito,Helvetica,Arial,sans-serif;
+        font-weight: 800;
+        outline: none;
+        color: #000000;
+        transition: width 1.5s;
+        letter-spacing: .2px;
+        }
+
+    #searchsubmit{
+        padding: 15px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: 0 0;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        transition: .1s ease-in-out;
+    }
+
+  /* END Header */
+
+  /* Bottom nav */
+
+  .logo-bottom-nav{
+    padding: 60px 0 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-bottom-nav{
+    padding: 80px 0 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+    /* Search */
+
+    #search-header{
+        margin:  0 0 0 0%;
         padding: 5px;
         display: inline;
         float: left;
         height: 50px;
         width: 35%; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #search-form {
@@ -175,3 +255,204 @@ footer{
 }
 
   /* END Footer */
+
+  @media only screen and (min-width: 767px) {
+ 
+    header{
+        height: 90px;
+        padding: 20px 5%;   
+    }
+
+    #search-header{
+        padding: 6px;
+        float: left;
+        height: 50px;
+        left: 20%;
+    }
+
+    #search-form {
+        margin: 0px;   
+        padding: 0 10px;
+        width: 150  px;
+        }
+
+    #searchsubmit{
+        padding: 0 0 0 15px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: 0 0;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        transition: .1s ease-in-out;
+    }
+
+    #menu{
+        padding: 15px 0 0 0;   
+        }
+    
+       .bottom-ad{
+           padding: 7px 22px;
+           background: #fff;
+           color: #002f34;
+           float: right;
+           font-size: 13px;
+           position: relative;
+           top: -24px;
+       }
+
+       ul{
+           position: relative;
+           right: 85px;
+           font-size: 15px;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+    header{
+        height: 90px;
+        padding: 20px 7%;   
+    }
+
+    #search-header{
+        padding: 8px;
+        float: left;
+        height: 50px;
+        left: 25%;
+    }
+
+    #search-form {
+        margin: 0px;   
+        padding: 0 10px;
+        }
+
+    #searchsubmit{
+        padding: 0 0 0 15px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: 0 0;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        transition: .1s ease-in-out;
+    }
+
+    #menu{
+        padding: 15px 0 0 0;   
+        }
+    
+       .bottom-ad{
+           padding: 7px 22px;
+           background: #fff;
+           color: #002f34;
+           float: right;
+           font-size: 13px;
+           position: relative;
+           top: -24px;
+       }
+
+       ul{
+           position: relative;
+           right: 85px;
+           font-size: 15px;
+        }
+  }
+
+  @media only screen and (min-width: 1439px) {
+
+    header{
+        height: 100px;
+        padding: 25px 10%;   
+    }
+
+    #search-header{
+        padding: 8px;
+        float: left;
+        height: 50px;
+        left: 37%;
+    }
+
+    #search-form {
+        margin: 0px;   
+        padding: 0 10px;
+        }
+
+    #searchsubmit{
+        padding: 0 0 0 15px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: 0 0;
+        color: rgb(255, 255, 255);
+        font-size: 19px;
+        transition: .1s ease-in-out;
+    }
+
+    #menu{
+        padding: 15px 0 0 0;   
+        }
+    
+       .bottom-ad{
+           padding: 7px 22px;
+           background: #fff;
+           color: #002f34;
+           float: right;
+           font-size: 15px;
+           position: relative;
+           top: -26px;
+       }
+
+       ul{
+           position: relative;
+           right: 39px;
+           font-size: 15px;
+        }
+  }
+
+  @media only screen and (min-width: 2559px) {
+
+    header{
+        height: 120px;
+        padding: 35px 15%;   
+    }
+    
+        .bottom-ad{
+            padding: 7px 22px;
+            background: #fff;
+            color: #002f34;
+            float: right;
+            font-size: 23px;
+            position: relative;
+            top: -39px;    
+        }
+
+        #search-header{
+            margin:  0 0 0 3%;
+            padding: 8px;
+            height: 50px;
+            left: 37%;
+        }
+    
+        #search-form {  
+            border-radius: 3px;
+            padding: 0 10px 0 10px;
+            width: 400px;
+            height: 45px;
+            position: relative;
+            bottom: 5px;
+            }
+    
+        #searchsubmit{
+            padding: 0 0 0 15px;
+            font-size: 20px;
+            position: relative;
+            bottom: 5px;
+        }
+        ul{
+            position: relative;
+            bottom: 6px;
+            right: 15px;
+            font-size: 24px;
+        }
+  }
