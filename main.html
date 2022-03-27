@@ -20,45 +20,56 @@
             <img class="logo-header" src="Flep.png" alt="logo">
         </div>
         <div id="search-header">
-            <input type="search" name="search" id="search-form" placeholder="Powiedz co chcesz znaleść" reqxuired="">
+            <input type="search" name="search" id="search-form" placeholder="Powiedz co chcesz znaleźć  " reqxuired="">
             <button type="submit" value="Znajdź" id="searchsubmit" class="submit">
             <span class="screen-reader-text">Szukaj</span></button>
         </div>     
-        <div id="menu"><ul> 
-            <li><a class="bottom" href="">O nas</a></li>
-            <li><a class="bottom" href="#"></a>Mój Flip</li>
-            </ul>
+        <div id="menu"> 
+            <a class="bottom" href="">O nas</a>
+            <a class="bottom" href="">Mój Flep</a>
             <a class="bottom-ad" href="">Dodaj ogłoszenie</a>
     </div>
     </header>
-        <nav class="top-nav">
-            <div style="border-left:1px solid black; height: 20px; width: 1px"></div>
-        </nav>
-    <div id="rodo" onload="showrodo();">
-        <p>Ta strona używa cookie i innych technologii. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z aktualnymi ustawieniami przeglądarki. Możesz je zmienić w dowolnym momencie <a href="https://wezwijfachowca.pl/wp-content/uploads/2019/11/rodo-urban-1.pdf">Szczegółowa polityka - RODO</a></a></p>
-        <input tpye="button" class="buttonrodo" onclick="closerodo()" value="Rozumiem">
-      </div>
-      <nav class="bottom-nav">
-        <img class="logo-bottom-nav" src="https://placehold.co/150x40" alt="logo">
-        <p class="text-bottom-nav">Flep.pl to darmowe ogłoszenia lokalne w kategoriach: Sport i Hobby oraz Edukacja.
-           Szybko znajdziesz tu ciekawe ogłoszenia i łatwo skontaktujesz się z ogłoszeniodawcą. '
-           Na OLX.pl czeka na Ciebie praca biurowa, mieszkania, pokoje, samochody. 
-           Jeśli chcesz coś sprzedać - w prosty sposób dodasz bezpłatne ogłoszenia. Chcesz coś kupić - tutaj znajdziesz ciekawe okazje,
-           taniej niż w sklepie. Sprzedawaj po sąsiedzku na OLX.pl</p>
+    <nav>
+        <div id="announcements">
+            <div id="user-ad">
+                <img alt="uzytkonik" class="user-photo" src="https://placehold.co/130x130">
+            </div>
+            <div id="text-area">
+               <h1></h1>
+            </div>
+            <div id="opinion">
+                <img alt="uzytkonik" class="user-photo-2" src="https://placehold.co/130x130">
+            </div>       
+        </div>
+        
+    </nav>
+        <div id="rodo" onload="showrodo();">
+           <p>Ta strona używa cookie i innych technologii. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z aktualnymi ustawieniami przeglądarki. Możesz je zmienić w dowolnym momencie <a href="https://wezwijfachowca.pl/wp-content/uploads/2019/11/rodo-urban-1.pdf">Szczegółowa polityka - RODO</a></a></p>
+           <input tpye="button" class="buttonrodo" onclick="closerodo()" value="Rozumiem">
+        </div>
 
-      </nav>
     <footer>
-       <ul class="buttons-footer"> 
-            <li><a class="przyciski" href="Strona główna">Strona główna</a></li>
-            <li><a class="przyciski" href="">O firmie</a></li>
-            <li><a class="przyciski" href="#">Kontakt</a></li>
-            <li><a class="przyciski" href="">O mnie</a></li>
-            <li><a class="przyciski" href="">O mnie</a></li>
-            <li><a class="przyciski" href="">O mnie</a></li>
-            <li><a class="przyciski" href="">O mnie</a></li>
-            <li><a class="przyciski" href="">O mnie</a></li>
-            <li><a class="przyciski" href="">O mnie</a></li>
-        </ul> 
+        <hr>
+        <div id="footer-links">
+            <a class="przyciski" href="">Pomoc</a><br>
+            <a class="przyciski" href="">Blog</a><br>
+            <a class="przyciski" href="">Regulamin</a><br>
+            <a class="przyciski" href="">Polityka prywatności</a>
+        </div>
+        <div id="footer-links-2">
+            <a class="przyciski" href="">Jak działa Flep.pl</a><br>
+            <a class="przyciski" href="">Zasady bezpieczeństwa</a><br>
+            <a class="przyciski" href="">Ustawienia plików cookie</a><br>
+            <a class="przyciski" href="">Kariera</a>
+        </div>
+        <div id="footer-icons">
+            <img alt="Google Play" class="link-to-app" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYBOZ-3MyRTt6tELmeqRn6kNmrtbJpiT23dtUl0s6Un45WA34h">
+            <img alt="Apple Store" class="link-to-app" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPXGeVuLqCdqNDe5XDpg6bJraDyEAKo08ui_yXvnd2siTn_0n ">
+            <hr><p class="p-footer">Darmowa aplikacja na Twój telefon</p>
+
+            
+        </div>
     </footer> 
 </body>
 </html>
