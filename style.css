@@ -21,8 +21,7 @@ nav{
     width: 100%;
     padding: 1px;
     background-color: #BAE8E8;
-    position: relative;
-    bottom: 5px;
+    margin: -4px 0 -4px 0;
 }
 
 #announcements{
@@ -83,7 +82,8 @@ footer{
     float: right;
     color: white;
     letter-spacing: 1px;
-    white-space: nowrap;      
+    white-space: nowrap;  
+    margin: 15px 0 0 0;       
     }
 
 
@@ -115,7 +115,7 @@ footer{
     }
 
     .bottom-ad{
-        margin: 20px;
+        margin: 19px 20px 20px 7px;
         padding: 7px 22px;
         background: #fff;
         color: #002f34;
@@ -137,13 +137,10 @@ footer{
         left: 37%;
     }
 
-    #search-form {
-        margin: 1px;   
+    #search-form { 
         background: #ffffff;
         border: none;
         border-radius: 3px;
-        padding: 0 10px 0 10px;
-        width: 250px;
         height: 34px;
         font-family: nunito,Helvetica,Arial,sans-serif;
         font-weight: 800;
@@ -151,6 +148,9 @@ footer{
         color: #000000;
         transition: width 1.5s;
         letter-spacing: .2px;
+        width: 60%;
+        margin: 0 0 0 -40%;
+        padding: 0 10px;
         }
 
     #searchsubmit{
@@ -269,7 +269,7 @@ footer{
 }
 
 #footer-icons{
-    margin: 20px 40px 0 0;
+    margin: 20px 10% 0 0;
     height: auto;
     float: right;
     color: #ffffff;
@@ -322,207 +322,93 @@ footer{
 .ad-title{
     padding: 0 0 10px 0;
 }
-
-
   /* END Footer */
-
-  @media only screen and (min-width: 767px) {
- 
-    header{
-        height: 90px;
-        padding: 20px 5%;   
+  @media only screen and (max-width: 767px) {
+    #search-form{
+       margin: 0 0 0 -40%;
+       padding: 0 10px;
+       width: 200px;
     }
 
-    #search-header{
-        padding: 6px;
-        float: left;
-        height: 50px;
-        left: 20%;
-    }
-
-    #search-form {
-        margin: 0px;   
-        padding: 0 10px;
-        width: 150  px;
-        }
-
-    #searchsubmit{
-        padding: 0 0 0 15px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        background: 0 0;
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        transition: .1s ease-in-out;
+    #searchsubmit{  
+       font-size: 16px;
     }
 
     #menu{
-        padding: 15px 0 0 0;   
-        }
+       margin: 15px 0 0 0;   
+    }
     
-       .bottom-ad{
-           padding: 7px 22px;
-           background: #fff;
-           color: #002f34;
-           float: right;
-           font-size: 13px;
-           position: relative;
-           top: -24px;
-       }
-
-       ul{
-           position: relative;
-           right: 85px;
-           font-size: 15px;
-        }
+    .bottom-ad{
+        padding: 7px 22px;
+        font-size: 13px;
     }
 
-    @media only screen and (min-width: 1024px) {
-
-    header{
-        height: 90px;
-        padding: 20px 7%;   
+    #footer-links-2{
+        width: 25%;
     }
-
+}
+  @media only screen and (max-width: 1024px) {
+    .bottom-ad{
+        margin: -2px 0 0 10px;
+        font-size: 15px;
+    }
+    .logo-header{
+        margin-top: 15px;
+        width: 67.6px;
+        height: 48.3px;
+    }
     #search-header{
-        padding: 8px;
-        float: left;
-        height: 50px;
-        left: 25%;
+        margin: 0 -15%;
     }
-
-    #search-form {
-        margin: 0px;   
-        padding: 0 10px;
-        }
-
     #searchsubmit{
-        padding: 0 0 0 15px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        background: 0 0;
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        transition: .1s ease-in-out;
+        font-size: 15px;
     }
-
-    #menu{
-        padding: 15px 0 0 0;   
-        }
-    
-       .bottom-ad{
-           padding: 7px 22px;
-           background: #fff;
-           color: #002f34;
-           float: right;
-           font-size: 13px;
-           position: relative;
-           top: -24px;
-       }
-
-       ul{
-           position: relative;
-           right: 85px;
-           font-size: 15px;
-        }
+    footer{
+        height: 150px;
+    }
   }
-
+  @media only screen and (min-width: 1079px) {
+     #search-form{
+        width: 60%;
+        margin: 0 0 0 -40%;
+    }
+  }
   @media only screen and (min-width: 1439px) {
-
     header{
         height: 100px;
         padding: 25px 10%;   
     }
 
     #search-header{
-        padding: 8px;
-        float: left;
-        height: 50px;
-        left: 37%;
+        margin: 0 0 0 10%;
     }
-
-    #search-form {
-        margin: 0px;   
-        padding: 0 10px;
-        }
-
+    
     #searchsubmit{
         padding: 0 0 0 15px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        background: 0 0;
-        color: rgb(255, 255, 255);
         font-size: 19px;
-        transition: .1s ease-in-out;
     }
-
-    #menu{
-        padding: 15px 0 0 0;   
-        }
     
-       .bottom-ad{
-           padding: 7px 22px;
-           background: #fff;
-           color: #002f34;
-           float: right;
-           font-size: 15px;
-           position: relative;
-           top: -26px;
-       }
-
-       ul{
-           position: relative;
-           right: 39px;
-           font-size: 15px;
-        }
+    .bottom-ad{
+        padding: 7px 22px;
+        font-size: 15px;
+        position: relative;
+        top: -26px;
+    }
   }
-
   @media only screen and (min-width: 2559px) {
-
-    header{
-        height: 120px;
-        padding: 35px 15%;   
-    }
-    
-        .bottom-ad{
-            padding: 7px 22px;
-            background: #fff;
-            color: #002f34;
-            float: right;
-            font-size: 23px;
-            position: relative;
-            top: -39px;    
-        }
-
         #search-header{
-            margin:  0 0 0 3%;
-            padding: 8px;
-            height: 50px;
-            left: 37%;
-        }
-    
-        #search-form {  
-            border-radius: 3px;
-            padding: 0 10px 0 10px;
-            width: 400px;
-            height: 45px;
+            margin:  0 0 0 -8%;
             position: relative;
             bottom: 5px;
+        }
+    
+        #search-form { 
+            width: 500px;
+            height: 45px;
             }
     
         #searchsubmit{
             padding: 0 0 0 15px;
             font-size: 20px;
-            position: relative;
-            bottom: 5px;
-        }
-        ul{
-            position: relative;
-            bottom: 6px;
-            right: 15px;
-            font-size: 24px;
         }
   }
