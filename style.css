@@ -12,53 +12,47 @@ header{
     background-color: #162447;
     width: 100%;
     display: inline-block;
-    padding: 10px 8%;   
-    align-items: center;
 }   
-
 nav{
     height: auto;
-    width: 100%;
-    padding: 1px;
     background-color: #BAE8E8;
-    margin: -4px 0 -4px 0;
+    margin: -4px 0;
 }
-
+#ogloszenia{
+    height: auto;
+    background-color: #831985;
+    padding: 20px 0;
+}
 #announcements{
-    margin: 50px auto;
+    margin: 0 auto;
     width: 80%;
     height: 150px;
     background-color: #fdfdfdbb;
 }
 .bottom-nav{
-    position: relative;
-    bottom: 4px;
     height: 455px;
     width: 100%;
     background-color: #E33E5A;
 }
-
 footer{
-    height: 114px;
+    height: 120px;
     background-color: #1F4068;
 }
 /* RODO  dziala tylko zmien (display zeby bylo aktywen)*/
-
 #rodo{
     position: static;
     bottom: 0px;
     padding: 30px;
-    height: auto;
+    width: 100%;
     background-color: #242020;
     position: fixed;
     color: white;
     font-family: 'Montserrat', sans-serif; 
     font-size: large;
     z-index: 1;
-    display: none;
   }
-  
 .buttonrodo{
+    margin: 10px 0 0 0;
     background-color: black;
     color: white;
     width: 80px;
@@ -66,290 +60,193 @@ footer{
     padding: 5px;
     border-radius: 10%;
   }
-  
 .buttonrodo:hover{
     background-color: rgb(255, 255, 255);
     color: black;
     transition: 0.3s;
   }
-  
   /* END RODO */
-
   /* Header */
-
-  #menu{        
+#menu{        
     width: auto;
     float: right;
     color: white;
     letter-spacing: 1px;
     white-space: nowrap;  
     margin: 15px 0 0 0;       
+}
+#logo-header{
+    float: left;
+    position: relative;
+    bottom: 10px;
+}
+.logo-header{
+    margin: 5px;
+    float: left;
+    height: 70px;
+    width: 100px;
+}
+a{
+   color: white;
+   text-decoration: none;
+}
+a:hover{
+    color: rgba(31, 25, 25, 0.5);
+}
+.bottom{
+    margin: 0 2px;
+}
+.bottom-ad{ 
+    margin: 19px 0 0 15px;
+    padding: 7px 22px;
+    background: #fff;
+    color: #002f34;
+    float: right;
+    font-size: 8px;
+}
+/* Search */
+#search-header{
+    margin: 5 0 0 30%;
+    float: left;
+    height: 50px;
+    width: auto;   
+}
+#search-form { 
+    background: #ffffff;
+    border: none;
+    border-radius: 3px;
+    height: 34px;
+    font-family: nunito,Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    outline: none;
+    color: #000000;
+    transition: width 1.5s;
+    letter-spacing: .2px;
+    width: 60%;
+    margin: 0 0 0 -40%;
+    padding: 0 10px;
     }
-
-
-    #logo-header{
-        float: left;
-        position: relative;
-        bottom: 10px;
-    }
-
-    .logo-header{
-        margin: 5px;
-        float: left;
-        height: 70px;
-        width: 100px;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-    }
-
-    a:hover{
-        color: rgba(31, 25, 25, 0.5);
-        text-decoration: none;
-    }
-
-    .bottom{
-        margin: 0 2px;
-    }
-
-    .bottom-ad{
-        margin: 19px 20px 20px 7px;
-        padding: 7px 22px;
-        background: #fff;
-        color: #002f34;
-        float: right;
-        font-size: 8px;
-    }
-
-    /* Search */
-
-    #search-header{
-        margin:  0 0 0 0%;
-        padding: 5px;
-        display: inline;
-        float: left;
-        height: 50px;
-        width: auto; 
-        display: flex;        
-        position: absolute;
-        left: 37%;
-    }
-
-    #search-form { 
-        background: #ffffff;
-        border: none;
-        border-radius: 3px;
-        height: 34px;
-        font-family: nunito,Helvetica,Arial,sans-serif;
-        font-weight: 800;
-        outline: none;
-        color: #000000;
-        transition: width 1.5s;
-        letter-spacing: .2px;
-        width: 60%;
-        margin: 0 0 0 -40%;
-        padding: 0 10px;
-        }
-
-    #searchsubmit{
-        padding: 15px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        background: 0 0;
-        color: rgb(255, 255, 255);
-        font-size: 12px;
-        transition: .1s ease-in-out;
-    }
-
-  /* END Header */
-
-  /* Bottom nav */
-
-  .logo-bottom-nav{
-    height: 120px;
-    width: 90px;
-    padding: 60px 0 0 0;
+#searchsubmit{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: 0 0;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    transition: .1s ease-in-out;
+}
+#search-header{
+    margin:  0 0 0 0%;
+    padding: 5px;
+    display: inline;
+    float: left;
+    height: 50px;
+    width: 35%; 
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .text-bottom-nav{
-    padding: 80px 0 0 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-    /* Search */
-
-    #search-header{
-        margin:  0 0 0 0%;
-        padding: 5px;
-        display: inline;
-        float: left;
-        height: 50px;
-        width: 35%; 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #search-form {
-        margin: 1px;   
-        background: #ffffff;
-        border: none;
-        border-radius: 3px;
-        padding: 0 10px 0 10px;
-        width: 250px;
-        height: 34px;
-        font-family: nunito,Helvetica,Arial,sans-serif;
-        font-weight: 800;
-        outline: none;
-        color: #000000;
-        transition: width 1.5s;
-        letter-spacing: .2px;
-        }
-
-    #searchsubmit{
-        padding: 15px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        background: 0 0;
-        color: rgb(255, 255, 255);
-        font-size: 12px;
-        transition: .1s ease-in-out;
-    }
-
-  /* END Header */
-
-  /* Bottom nav */
-
-  .logo-bottom-nav{
-    padding: 60px 0 0 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .text-bottom-nav{
-    padding: 80px 0 0 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  /* Footer */
-
+}
+#search-form{
+    margin: 1px;   
+    background: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
+    width: 250px;
+    height: 34px;
+    font-family: nunito,Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    outline: none;
+    color: #000000;
+    transition: width 1.5s;
+    letter-spacing: .2px;
+}
+#searchsubmit{
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: 0 0;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    transition: .1s ease-in-out;
+}
 .buttons-footer{
     padding: 3%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 70%;
 }
-
-#footer-links{
+#footer-links,#footer-links-2{
     padding: 20px 0 40px 10%;
     height: auto;
-    width: 20%;
+    width: 22%;
     float: left;
 }
-
-#footer-links-2{
-    padding: 20px 0 40px 5%;
-    height: auto;
-    width: 20%;
-    float: left;
-}
-
 #footer-icons{
     margin: 20px 10% 0 0;
     height: auto;
     float: right;
     color: #ffffff;
 }           
-
 .p-footer{
     text-align: center;
 }
-
-
 .link-to-app{
     margin: 10px 10px 0 10px;
     height: 40px;
     width: 140px;
     border-radius: 7%;
 }
-
-#user-ad{
-    width: auto;
-    height: 150px;
-    float: left;
-}
-
-.user-photo{
-    margin: 10px 0px 10px 20px;
-    border-radius: 100%;
-    float: left;
-}
-
 #text-area{
     float: left;
     margin: 10px 20px;
-    width: 60%;
+    width: 50%;
     height: 120px;
     background-color: #E33E5A;
 }
-
 #opinion{
     width: auto;
     height: 150px;
     border-radius: 100%;
     float: right;
+    padding: 10px 20px 10px 0;
+    width: 20%;
 }
-
+#user-ad{
+    width: auto;
+    height: 150px;
+    border-radius: 100%;
+    float: left;
+    width: 20%;
+    padding: 10px 0px 10px 20px;
+}
+.user-photo{
+    border-radius: 100%;
+    float: left;
+}
 .user-photo-2{
-    margin: 10px 20px 10px 0;
     border-radius: 100%;
 }
 
-.ad-title{
-    padding: 0 0 10px 0;
-}
-  /* END Footer */
-  @media only screen and (max-width: 767px) {
-    #search-form{
-       margin: 0 0 0 -40%;
-       padding: 0 10px;
-       width: 200px;
+  @media only screen and (max-width: 768px) {
+    header{
+        padding: 10px;
     }
-
-    #searchsubmit{  
-       font-size: 16px;
-    }
-
-    #menu{
-       margin: 15px 0 0 0;   
-    }
-    
+     .logo-header{
+         margin-top: 15px;
+         width: 67.6px;
+         height: 48.3px;
+     }
+     footer{
+         height: 100px;
+         font-size: 10px;
+     }
+     #footer-links,#footer-links-2{
+         width: 50%;
+     }
     .bottom-ad{
-        padding: 7px 22px;
-        font-size: 13px;
-    }
-
-    #footer-links-2{
-        width: 25%;
-    }
-}
-  @media only screen and (max-width: 1024px) {
-    .bottom-ad{
-        margin: -2px 0 0 10px;
+        margin: -7px 0 0 10px;
         font-size: 15px;
     }
     .logo-header{
@@ -358,57 +255,54 @@ footer{
         height: 48.3px;
     }
     #search-header{
-        margin: 0 -15%;
+        margin: -4px -15%;
+    }
+    span{
+        display: block;
+        float: right;
+    }
+    #menu, #footer-icons, #search-header{
+        display: none;
+    }
+  }
+  @media only screen and (min-width: 769px)and (max-width: 1079px) {
+    header{
+        padding: 10px 100px;
+    }
+    .bottom-ad{
+        margin: -7px 0 0 10px;
+        font-size: 15px;
+    }
+    .logo-header{
+        margin-top: 15px;
+        width: 67.6px;
+        height: 48.3px;
     }
     #searchsubmit{
         font-size: 15px;
     }
     footer{
-        height: 150px;
+        height: 180px;
     }
   }
-  @media only screen and (min-width: 1079px) {
-     #search-form{
-        width: 60%;
-        margin: 0 0 0 -40%;
+  @media only screen and (min-width: 1080px) {
+    span{
+        display: none;
     }
   }
-  @media only screen and (min-width: 1439px) {
+  @media only screen and (min-width: 1440px) {
     header{
         height: 100px;
         padding: 25px 10%;   
     }
-
-    #search-header{
-        margin: 0 0 0 10%;
-    }
-    
     #searchsubmit{
         padding: 0 0 0 15px;
         font-size: 19px;
     }
-    
     .bottom-ad{
         padding: 7px 22px;
         font-size: 15px;
         position: relative;
         top: -26px;
     }
-  }
-  @media only screen and (min-width: 2559px) {
-        #search-header{
-            margin:  0 0 0 -8%;
-            position: relative;
-            bottom: 5px;
-        }
-    
-        #search-form { 
-            width: 500px;
-            height: 45px;
-            }
-    
-        #searchsubmit{
-            padding: 0 0 0 15px;
-            font-size: 20px;
-        }
   }
