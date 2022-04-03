@@ -20,33 +20,59 @@
             <img class="logo-header" src="Flep.png" alt="logo">
         </div>
         <span id="burger" style="font-size:30px;cursor:pointer;" onclick="openNav()">☰</span>
-
+        <!--
+        <div id="search-header">
+            <input type="search" name="search" id="search-form" placeholder="Powiedz co chcesz znaleźć  " reqxuired="">
+            <button type="submit" value="Znajdź" id="searchsubmit" class="submit">
+            <span class="screen-reader-text">Szukaj</span></button>
+        </div>   -->
         <div id="menu"> 
+            <a class="bottom" href="main.html">Strona Główna</a>
             <a class="bottom" href="aboutus.html">O nas</a>
-            <a class="bottom" href="login.html">Mój Flep</a>
             <a class="bottom-ad" href="announcements.html">Dodaj ogłoszenie</a>
     </div>
     </header>
     <nav>
-        <h1 class="text-nav">Ogłoszenia</h1>
+        <h1 class="text-nav">Mój Flep</h1>
     </nav>
     <div id="ogloszenia">
-        <div id="announcements">
-            <div id="user-ad">
-                <img alt="uzytkonik" class="user-photo" src="https://placehold.co/130x130">
+        <div id="login-window">
+            <ul class="login">
+                <li><a class="login-hover" href="login.html" >Zaloguj się </a></li>
+                <li><a class="login-hover" href="register.html" >Rejestracja</a></li>
+            </ul>
+            <div id="login-form">
+                <form action="register.php" method="POST">
+                    <br>
+                    <p class="input-form">Imie:</p> 
+                    <input class="input-form" type="text" name="login"> <br><br>
+                    <p class="input-form">Nazwisko:</p> 
+                    <input class="input-form" type="text" name="login"> <br><br>
+                    <p class="input-form">Data urodzenia:</p> 
+                    <input class="input-form" type="date" name="login"> <br><br>
+                    <p class="input-form">E-mail:</p> 
+                    <input class="input-form" type="text" name="login"> <br><br>
+                    <p class="input-form">Hasło:</p> 
+                    <input class="input-form" type="password" name="password"> <br><br>
+                    <div id="rule">
+                        <p> <input type="checkbox">
+                            Wyrażam zgodę na używanie przez Grupę FLEP sp. z o.o. środków komunikacji elektronicznej oraz
+                            telekomunikacyjnych urządzeń końcowych w celu przesyłania mi informacji handlowych oraz prowadzenia marketingu
+                            (np. newsletter, wiadomości SMS) przez Grupę FLEP sp. z o.o., podmioty powiązane i partnerów biznesowych.
+                            Moja zgoda obejmuje numery telefonów i adresy e-mail wykorzystywane podczas korzystania z usług Grupy FLEP Sp. z o.o. 
+                            Wyrażoną zgodę można wycofać lub ograniczyć w dowolnej chwili za pomocą odpowiednich ustawień konta lub zgłaszając
+                            nam takie żądanie.</p>
+                    </div><br>
+                    <input class="submit-form" type="submit" value="Zarejestruj się">
+                </form>
             </div>
-            <div id="text-area">
-               <h1></h1>
-            </div>
-            <div id="opinion">
-                <img alt="uzytkonik" class="user-photo-2" src="https://placehold.co/130x130">
-            </div>       
         </div>
     </div>
-        <div id="rodo" onload="showrodo();">
+
+     <!--  <div id="rodo" onload="showrodo();">
            <p>Ta strona używa cookie i innych technologii. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z aktualnymi ustawieniami przeglądarki. Możesz je zmienić w dowolnym momencie <a href="https://wezwijfachowca.pl/wp-content/uploads/2019/11/rodo-urban-1.pdf">Szczegółowa polityka - RODO</a></a></p>
            <input tpye="button" class="buttonrodo" onclick="closerodo()" value="Rozumiem">
-        </div>
+        </div>--> 
 
     <footer>
         <div id="footer-links">

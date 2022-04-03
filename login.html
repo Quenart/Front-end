@@ -20,33 +20,52 @@
             <img class="logo-header" src="Flep.png" alt="logo">
         </div>
         <span id="burger" style="font-size:30px;cursor:pointer;" onclick="openNav()">☰</span>
-
+        <!--
+        <div id="search-header">
+            <input type="search" name="search" id="search-form" placeholder="Powiedz co chcesz znaleźć  " reqxuired="">
+            <button type="submit" value="Znajdź" id="searchsubmit" class="submit">
+            <span class="screen-reader-text">Szukaj</span></button>
+        </div>   -->
         <div id="menu"> 
+            <a class="bottom" href="main.html">Strona Główna</a>
             <a class="bottom" href="aboutus.html">O nas</a>
-            <a class="bottom" href="login.html">Mój Flep</a>
             <a class="bottom-ad" href="announcements.html">Dodaj ogłoszenie</a>
     </div>
     </header>
     <nav>
-        <h1 class="text-nav">Ogłoszenia</h1>
+        <h1 class="text-nav">Mój Flep</h1>
     </nav>
     <div id="ogloszenia">
-        <div id="announcements">
-            <div id="user-ad">
-                <img alt="uzytkonik" class="user-photo" src="https://placehold.co/130x130">
+        <div id="login-window">
+            <ul class="login">
+                <li><a class="login-hover" href="login.html" >Zaloguj się </a></li>
+                <li><a class="login-hover" href="register.html" >Rejestracja</a></li>
+            </ul>
+            <div id="login-form">
+                <form action="login.php" method="POST">
+                    <br>
+                    <p class="input-form">Login:</p> 
+                    <input class="input-form" type="text" name="login"> <br><br>
+                    <p class="input-form">Hasło:</p> 
+                    <input class="input-form" type="password" name="password"> <br><br>
+                    <a class="input-a" href="">Przypomnienie hasła</a><br><br>
+                    <input class="submit-form" type="submit" value="Zaloguj się">
+                </form>
             </div>
-            <div id="text-area">
-               <h1></h1>
+            <div id="rule">
+                <p>
+                    Klikając przycisk zarejestruj się, akceptuję Regulamin.
+                    Zalogowanie oznacza akceptację Regulaminu serwisu Flep.pl w aktualnym brzmieniu.
+                  Jeśli nie akceptujesz warunków zmienionego Regulaminu serwisu Flep.pl,
+                  wyślij oświadczenie o rozwiązaniu Umowy w trybie przewidzianym w Regulaminie.</p>
             </div>
-            <div id="opinion">
-                <img alt="uzytkonik" class="user-photo-2" src="https://placehold.co/130x130">
-            </div>       
         </div>
     </div>
-        <div id="rodo" onload="showrodo();">
+
+     <!--  <div id="rodo" onload="showrodo();">
            <p>Ta strona używa cookie i innych technologii. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z aktualnymi ustawieniami przeglądarki. Możesz je zmienić w dowolnym momencie <a href="https://wezwijfachowca.pl/wp-content/uploads/2019/11/rodo-urban-1.pdf">Szczegółowa polityka - RODO</a></a></p>
            <input tpye="button" class="buttonrodo" onclick="closerodo()" value="Rozumiem">
-        </div>
+        </div>--> 
 
     <footer>
         <div id="footer-links">

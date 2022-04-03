@@ -17,10 +17,14 @@ nav{
     height: auto;
     background-color: #BAE8E8;
     margin: -4px 0;
+    padding: 10px 0;
+}
+.text-nav{
+    text-align: center;
 }
 #ogloszenia{
     height: auto;
-    background-color: #831985;
+    background-color: #941616;
     padding: 20px 0;
 }
 #announcements{
@@ -91,7 +95,10 @@ a{
    text-decoration: none;
 }
 a:hover{
-    color: rgba(31, 25, 25, 0.5);
+    color: rgb(222, 172, 10);
+}
+.login-hover{
+    color: #000000;
 }
 .bottom{
     margin: 0 2px;
@@ -228,8 +235,50 @@ a:hover{
 .user-photo-2{
     border-radius: 100%;
 }
-
-  @media only screen and (max-width: 768px) {
+#login-window{
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: auto;
+    background-color: white;
+    display: block;
+}
+ul {
+    width: 100%;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    width: auto;
+    margin: 1px 1em;
+}
+#login-form{
+    margin: 5%;
+    width: 90%;
+    height: auto;
+}
+.input-form{
+    margin: 2px 10%;
+    width: 80%;
+}
+.input-a{
+    color: #000000;
+    margin: 2px 10%;
+    font-size:small;
+}
+.submit-form{
+    padding: 3%;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 2px 10%;
+    width: 80%;
+}
+#rule{
+    margin: 2px 10%;
+    width: 80%;
+    font-size: xx-small;
+}
+  @media only screen and (max-width: 769px) {
     header{
         padding: 10px;
     }
@@ -264,10 +313,13 @@ a:hover{
     #menu, #footer-icons, #search-header{
         display: none;
     }
+    #login-window{
+        width: 55%;
+    }
   }
-  @media only screen and (min-width: 769px)and (max-width: 1079px) {
+  @media only screen and (min-width: 769px)and (max-width: 1024px) {
     header{
-        padding: 10px 100px;
+        padding: 10px 5em;
     }
     .bottom-ad{
         margin: -7px 0 0 10px;
@@ -281,8 +333,16 @@ a:hover{
     #searchsubmit{
         font-size: 15px;
     }
+    #login-window{
+        width: 50%;
+    }
     footer{
-        height: 180px;
+        height: 155px;
+    }
+  }
+  @media only screen and (min-width: 769px)and (max-width: 1024px) {
+    span{
+        display: none;
     }
   }
   @media only screen and (min-width: 1080px) {
