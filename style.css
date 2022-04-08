@@ -18,7 +18,6 @@ header{
 nav{
     height: auto;
     background-color: #BAE8E8;
-    margin: -4px 0;
     padding: 10px 0;
 }
 .text-nav{
@@ -32,7 +31,8 @@ nav{
 #announcements{
     margin: 0 auto;
     width: 80%;
-    height: 150px;
+    padding: 1em;
+    height: 180px;
     background-color: #fdfdfdbb;
 }
 .bottom-nav{
@@ -41,10 +41,8 @@ nav{
     background-color: #E33E5A;
 }
 footer{
-    height: 120px;
-    background-color: #1F4068;
+    height: auto;
 }
-/* RODO  dziala tylko zmien (display zeby bylo aktywen)*/
 #rodo{
     position: static;
     bottom: 0px;
@@ -56,7 +54,7 @@ footer{
     font-family: 'Montserrat', sans-serif; 
     font-size: large;
     z-index: 1;
-  }
+}
 .buttonrodo{
     margin: 10px 0 0 0;
     background-color: black;
@@ -70,24 +68,24 @@ footer{
     background-color: rgb(255, 255, 255);
     color: black;
     transition: 0.3s;
-  }
-  /* END RODO */
-  /* Header */
+}
 #menu{        
+    margin: 15px 0;    
     width: auto;
     float: right;
     color: white;
     letter-spacing: 1px;
-    white-space: nowrap;  
-    margin: 15px 0 0 0;       
+    white-space: nowrap;     
 }
-#logo-header{
-    float: left;
-    position: relative;
-    bottom: 10px;
+.bottom-ad{ 
+    margin: 19px 10px;
+    padding: 7px 22px;
+    background: #fff;
+    color: #002f34;
+    float: right;
+    font-size: 8px;
 }
 .logo-header{
-    margin: 5px;
     float: left;
     height: 70px;
     width: 100px;
@@ -95,6 +93,7 @@ footer{
 a{
    color: white;
    text-decoration: none;
+   transition: .3s ease-in-out;
 }
 a:hover{
     color: rgb(222, 172, 10);
@@ -102,31 +101,21 @@ a:hover{
 .login-hover{
     color: #000000;
 }
-.bottom{
-    margin: 0 2px;
-}
-.bottom-ad{ 
-    margin: 19px 0 0 15px;
-    padding: 7px 22px;
-    background: #fff;
-    color: #002f34;
-    float: right;
-    font-size: 8px;
-}
-/* Search */
 #search-header{
     margin: 0.5em 10%;
     float: left;
-    height: 50px;
-    width: auto;   
 }
 #searchsubmit{
     cursor: pointer;
     outline: none;
     border: none;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 12px;
-    transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
+    padding: 15px;
+    cursor: pointer;
+    background: 0 0;
+    font-size: 12px;
 }   
 #search-form{
     background: #ffffff;
@@ -135,21 +124,13 @@ a:hover{
     width: 350px;
     height: 34px;
     outline: none;
-    transition: width 1.5s;
+    transition: width 1.9s;
     letter-spacing: .2px;
     background: #ffffff;
     border-radius: 3px;
     font-family: nunito,Helvetica,Arial,sans-serif;
     font-weight: 800;
     color: #000000;
-}
-#searchsubmit{
-    padding: 15px;
-    cursor: pointer;
-    background: 0 0;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    transition: .1s ease-in-out;
 }
 #footer-links,#footer-links-2{
     padding: 20px 0 40px 10%;
@@ -175,9 +156,9 @@ a:hover{
 #text-area{
     float: left;
     margin: 10px 20px;
-    width: 50%;
     height: 120px;
     background-color: #E33E5A;
+    width: calc(100% - 360px);
 }
 #opinion{
     width: auto;
@@ -185,32 +166,21 @@ a:hover{
     border-radius: 100%;
     float: right;
     padding: 10px 20px 10px 0;
-    width: 20%;
 }
 #user-ad{
     width: auto;
     height: 150px;
     border-radius: 100%;
     float: left;
-    width: 20%;
     padding: 10px 0px 10px 20px;
 }
 .user-photo{
-    border-radius: 100%;
     float: left;
 }
-.user-photo-2{
+.user-photo,.user-photo-2{
     border-radius: 100%;
 }
-#login-window{
-    width: 40%;
-    margin: 0 auto;
-    padding: 20px 0;
-    height: auto;
-    background-color: white;
-    display: block;
-}
-ul {
+ul{
     width: 100%;
     text-align: center;
 }
@@ -219,31 +189,58 @@ li{
     width: auto;
     margin: 1px 1em;
 }
+#login-window{
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: auto;
+    background-color: #ccffff;
+}
 #login-form{
     margin: 5%;
-    width: 90%;
+    padding: 5%;
     height: auto;
+    margin: 0 auto;
 }
 .input-form{
-    margin: 2px 10%;
-    width: 80%;
+    width: 100%;
+    height: auto;
+    text-align: left;
 }
 .input-a{
     color: #000000;
-    margin: 2px 10%;
     font-size:small;
+    margin: auto;
 }
+
 .submit-form{
     padding: 3%;
     background-color: #000000;
     color: #ffffff;
-    margin: 2px 10%;
-    width: 80%;
+    width: 100%;
+    text-align: center;
 }
-#rule{
-    margin: 2px 10%;
-    width: 80%;
-    font-size: xx-small;
+#teaminfo{
+    padding: 20px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+#authors{
+    text-align: center;
+}
+#teamphotos{
+    background-color: #ffffff;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+}
+.user-photo-team{
+    background-size: auto ;
+    margin: 0 20px;
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
 }
   @media only screen and (max-width: 769px) {
     header{
@@ -255,10 +252,10 @@ li{
          height: 48.3px;
      }
      footer{
-         height: 100px;
-         font-size: 10px;
+         font-size: 17px;
      }
      #footer-links,#footer-links-2{
+         margin: 0;
          width: 50%;
      }
     .bottom-ad{
@@ -284,7 +281,7 @@ li{
         width: 55%;
     }
   }
-  @media only screen and (min-width: 769px)and (max-width: 1024px) {
+  @media only screen and (min-width: 769px)and (max-width: 1023px) {
     header{
         padding: 10px 5em;
     }
@@ -300,20 +297,33 @@ li{
     #searchsubmit{
         font-size: 15px;
     }
-    #login-window{
-        width: 50%;
-    }
     footer{
         height: 155px;
     }
     span{
         display: none;
     }
-    .search-header{
-        margin: -1px 0;
-    }
     #search-header{
-        margin: 0 60px;
+        margin: 0 20px;
+    }
+    #search-form{
+        width: 250px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px)and (max-width: 1400px) {
+    header{
+        padding: 10px 5em;
+    }
+    span{
+        display: none;
+    }
+    #search-form{
+        width: 270px;
+    }
+    .bottom-ad{
+        margin: -3px 4px;
+        font-size: 10px;
     }
   }
   @media only screen and (min-width: 1080px) {

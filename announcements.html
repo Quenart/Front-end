@@ -36,6 +36,30 @@
         <h1 class="text-nav">Dodaj Ogłoszenie</h1>
     </nav>
     <div id="ogloszenia">
+        <div id="login-window">
+            <h1 class="text-ogloszenie">Dodaj Ogłoszenie</h1>
+            <div id="login-form">
+                <form action="ogloszenie.php" method="POST">
+                    <p class="input-form">Tytuł ogłoszenia*</p> 
+                    <input class="input-form" type="text" name="tytulogloszenia"> <br><br>
+                    <p class="input-form">Kategoria*</p> 
+                    <input class="input-form" type="text" name="kategoriaogloszenia"> <br><br><hr><br>
+
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp"><br><br>
+                    <p class="input-form">Opis*</p> 
+                    <textarea class="input-form" rows="4" cols="50" name="opis"> Wpisz te informacje, które byłyby ważne dla Ciebie podczas przeglądania takiego ogłoszenia"</textarea><br><br>
+
+                    <div id="rule">
+                        <p> <input type="checkbox">
+                            Wyrażam zgodę na używanie przez Grupę Flep sp. z o.o. środków komunikacji elektronicznej oraz
+                             telekomunikacyjnych urządzeń końcowych w celu przesyłania mi informacji handlowych oraz 
+                             prowadzenia marketingu (np. newsletter, wiadomości SMS) przez Grupę Flep sp. z o.o., 
+                             podmioty powiązane i partnerów biznesowych.</p>
+                    </div><br>
+                    <input class="submit-form" type="submit" value="Dodaj ogłoszenie">
+                </form>
+            </div>
+        </div>
     </div>
         <div id="rodo" onload="showrodo();">
            <p>Ta strona używa cookie i innych technologii. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z aktualnymi ustawieniami przeglądarki. Możesz je zmienić w dowolnym momencie <a href="https://wezwijfachowca.pl/wp-content/uploads/2019/11/rodo-urban-1.pdf">Szczegółowa polityka - RODO</a></a></p>

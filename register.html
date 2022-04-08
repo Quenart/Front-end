@@ -42,37 +42,34 @@
                 <li><a class="login-hover" href="register.html" >Rejestracja</a></li>
             </ul>
             <div id="login-form">
-                <form action="register.php" method="POST">
+                <form action="register.php" method="POST" name="rejestr">
                     <br>
                     <p class="input-form">Imie:</p> 
-                    <input class="input-form" type="text" name="login"> <br><br>
+                    <input class="input-form" type="text" name="name"> <br><br>
                     <p class="input-form">Nazwisko:</p> 
-                    <input class="input-form" type="text" name="login"> <br><br>
+                    <input class="input-form" type="text" name="lastname"> <br><br>
                     <p class="input-form">Data urodzenia:</p> 
-                    <input class="input-form" type="date" name="login"> <br><br>
+                    <input class="input-form" type="date" name="date"> <br><br>
                     <p class="input-form">E-mail:</p> 
-                    <input class="input-form" type="text" name="login"> <br><br>
+                    <input class="input-form" type="text" name="email"> <br><br>
                     <p class="input-form">Hasło:</p> 
                     <input class="input-form" type="password" name="password"> <br><br>
-                    <div id="rule">
-                        <p> <input type="checkbox">
-                            Wyrażam zgodę na używanie przez Grupę FLEP sp. z o.o. środków komunikacji elektronicznej oraz
-                            telekomunikacyjnych urządzeń końcowych w celu przesyłania mi informacji handlowych oraz prowadzenia marketingu
-                            (np. newsletter, wiadomości SMS) przez Grupę FLEP sp. z o.o., podmioty powiązane i partnerów biznesowych.
-                            Moja zgoda obejmuje numery telefonów i adresy e-mail wykorzystywane podczas korzystania z usług Grupy FLEP Sp. z o.o. 
-                            Wyrażoną zgodę można wycofać lub ograniczyć w dowolnej chwili za pomocą odpowiednich ustawień konta lub zgłaszając
-                            nam takie żądanie.</p>
-                    </div><br>
-                    <input class="submit-form" type="submit" value="Zarejestruj się">
+                    <div id="rest">
+                            <p style="font-size:smaller"> <input type="checkbox" name="agreement">
+                                Wyrażam zgodę na używanie przez Grupę FLEP sp. z o.o. środków komunikacji elektronicznej oraz
+                                telekomunikacyjnych urządzeń końcowych w celu przesyłania mi informacji handlowych oraz prowadzenia marketingu
+                                (np. newsletter, wiadomości SMS) przez Grupę FLEP sp. z o.o., podmioty powiązane i partnerów biznesowych.
+                                Moja zgoda obejmuje numery telefonów i adresy e-mail wykorzystywane podczas korzystania z usług Grupy FLEP Sp. z o.o. 
+                                Wyrażoną zgodę można wycofać lub ograniczyć w dowolnej chwili za pomocą odpowiednich ustawień konta lub zgłaszając
+                                nam takie żądanie.</p>
+                        <br>
+                        <input class="submit-form" type="submit" value="Zarejestruj się">
+                    </div>
                 </form>
+                <button type="submit" onClick="sprawdzImie()">Ok</button>
             </div>
         </div>
     </div>
-
-     <!--  <div id="rodo" onload="showrodo();">
-           <p>Ta strona używa cookie i innych technologii. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z aktualnymi ustawieniami przeglądarki. Możesz je zmienić w dowolnym momencie <a href="https://wezwijfachowca.pl/wp-content/uploads/2019/11/rodo-urban-1.pdf">Szczegółowa polityka - RODO</a></a></p>
-           <input tpye="button" class="buttonrodo" onclick="closerodo()" value="Rozumiem">
-        </div>--> 
 
     <footer>
         <div id="footer-links">
