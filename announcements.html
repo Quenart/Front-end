@@ -43,19 +43,31 @@
                     <p class="input-form">Tytuł ogłoszenia*</p> 
                     <input class="input-form" type="text" name="tytulogloszenia"> <br><br>
                     <p class="input-form">Kategoria*</p> 
-                    <input class="input-form" type="text" name="kategoriaogloszenia"> <br><br><hr><br>
-
+                    <select class="input-form" name="kategoriaogloszenia">
+                        <optgroup label="Praca">
+                            <option>Wynajmę</option>
+                            <option>Potrzebuje do pracy</option>
+                        </optgroup>
+                        <optgroup label="Elektronika">
+                            <option>Komputery</option>
+                            <option>Częsci Komputerowe</option>
+                            <option>Urządzenia elektryczne</option>
+                        </optgroup>
+                    </select> 
+                    <br><br><hr><br>
+                    <p class="input-form">Zdjęcie główne*</p> 
                     <input type="file" accept="image/heic, image/png, image/jpeg, image/webp"><br><br>
                     <p class="input-form">Opis*</p> 
-                    <textarea class="input-form" rows="4" cols="50" name="opis"> Wpisz te informacje, które byłyby ważne dla Ciebie podczas przeglądania takiego ogłoszenia"</textarea><br><br>
-
+                    <textarea class="input-form" rows="4" cols="50" name="opis" placeholder="Wpisz te informacje, które byłyby ważne dla Ciebie podczas przeglądania takiego ogłoszenia"></textarea><br><br>
+                    <p class="input-form">Numer telefonu</p>
+                    <input class="input-form" type="text" name="kategoriaogloszenia"> <br><br><hr><br>
                     <div id="rule">
                         <p> <input type="checkbox">
                             Wyrażam zgodę na używanie przez Grupę Flep sp. z o.o. środków komunikacji elektronicznej oraz
                              telekomunikacyjnych urządzeń końcowych w celu przesyłania mi informacji handlowych oraz 
                              prowadzenia marketingu (np. newsletter, wiadomości SMS) przez Grupę Flep sp. z o.o., 
                              podmioty powiązane i partnerów biznesowych.</p>
-                    </div><br>
+                    </div><br><br>  
                     <input class="submit-form" type="submit" value="Dodaj ogłoszenie">
                 </form>
             </div>

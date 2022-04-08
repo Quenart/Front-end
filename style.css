@@ -212,7 +212,6 @@ li{
     font-size:small;
     margin: auto;
 }
-
 .submit-form{
     padding: 3%;
     background-color: #000000;
@@ -229,30 +228,30 @@ li{
     text-align: center;
 }
 #teamphotos{
-    background-color: #ffffff;
     padding: 10px;
+    background-color: #ffffff;
     width: auto;
     display: inline-block;
     text-align: center;
 }
 .user-photo-team{
-    background-size: auto ;
     margin: 0 20px;
+    background-size: auto;
     width: 190px;
     height: 190px;
     border-radius: 100%;
+}
+span{
+    display: none;
 }
   @media only screen and (max-width: 769px) {
     header{
         padding: 10px;
     }
      .logo-header{
-         margin-top: 15px;
+         margin-top: 5px;
          width: 67.6px;
          height: 48.3px;
-     }
-     footer{
-         font-size: 17px;
      }
      #footer-links,#footer-links-2{
          margin: 0;
@@ -263,7 +262,6 @@ li{
         font-size: 15px;
     }
     .logo-header{
-        margin-top: 15px;
         width: 67.6px;
         height: 48.3px;
     }
@@ -278,30 +276,27 @@ li{
         display: none;
     }
     #login-window{
-        width: 55%;
+        width: 75%;
     }
   }
   @media only screen and (min-width: 769px)and (max-width: 1023px) {
     header{
-        padding: 10px 5em;
+        padding: 10px 2em;
     }
     .bottom-ad{
         margin: -7px 0 0 10px;
         font-size: 15px;
     }
     .logo-header{
-        margin-top: 15px;
+        margin-top: 5px;
         width: 67.6px;
         height: 48.3px;
     }
     #searchsubmit{
         font-size: 15px;
     }
-    footer{
-        height: 155px;
-    }
-    span{
-        display: none;
+    #login-window{
+        width: 65%;
     }
     #search-header{
         margin: 0 20px;
@@ -310,25 +305,19 @@ li{
         width: 250px;
     }
   }
-
   @media only screen and (min-width: 1024px)and (max-width: 1400px) {
     header{
         padding: 10px 5em;
     }
-    span{
-        display: none;
-    }
     #search-form{
         width: 270px;
     }
-    .bottom-ad{
-        margin: -3px 4px;
-        font-size: 10px;
+    #search-header{
+        margin-top: 2px;
     }
-  }
-  @media only screen and (min-width: 1080px) {
-    span{
-        display: none;
+    .logo-header{
+        height: 58.3px;
+        width: 83.3px;
     }
   }
   @media only screen and (min-width: 1440px) {
@@ -339,6 +328,9 @@ li{
     #searchsubmit{
         padding: 0 0 0 15px;
         font-size: 19px;
+    }
+    #search-form{
+        width: 420px;
     }
     .bottom-ad{
         padding: 7px 22px;

@@ -25,6 +25,8 @@ function datacheck(){
 
 
 var znak = ["!", "?", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
+var znakemail = ["!", "?", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
+
 function sprawdzImie() {
     for (i = 0; i < imie.length; i++) {
         for (j = 0; j < znak.length; j++) {
