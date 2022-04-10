@@ -38,7 +38,7 @@
             <h1 class="text-ogloszenie">Dodaj Ogłoszenie</h1>
             <div id="login-form">
                 <form action="ogloszenie.php" method="POST">
-                    <p class="input-form">Tytuł ogłoszenia*</p> 
+                    <p class="input-form" id="titleadd">Tytuł ogłoszenia*</p> 
                     <input class="input-form" type="text" name="tytulogloszenia"> <br><br>
                     <p class="input-form">Kategoria*</p> 
                     <select class="input-form" name="kategoriaogloszenia">
@@ -69,6 +69,7 @@
                     </div><br><br>  
                     <input class="submit-form" type="submit" value="Dodaj ogłoszenie">
                 </form>
+                <button type="submit" onClick="datacheck()">Ok</button>
             </div>
         </div>
     </div>
